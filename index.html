@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petit jeu pour Tatiana 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Devine la bonne réponse !</h1>
+        <p>Quel est mon sentiment pour toi aujourd'hui ?</p>
+
+        <!-- Boutons pour les réponses -->
+        <div id="choices">
+            <button class="choice" onclick="checkAnswer('faux')">Tu es une fille parmi d'autres</button>
+            <button class="choice" onclick="checkAnswer('vrai')">Je t'aime</button>
+            <button class="choice" onclick="checkAnswer('faux')">Je te considère comme une amie</button>
+        </div>
+
+        <!-- Résultat caché au départ -->
+        <div id="result" class="hidden">
+            <p id="message"></p>
+            <img src="photo.jpg" alt="Notre Photo" id="heart" class="hidden">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
