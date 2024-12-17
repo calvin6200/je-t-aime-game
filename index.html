@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeu des Questions</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeu des Questions pour Tatiana</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="game-container">
-        <h1>Jeu des Questions pour Tatiana 💖</h1>
-        <p id="question">Question...</p>
-        <input type="text" id="answer" placeholder="Écris ta réponse ici">
-        <br>
-        <button id="submit">Valider</button>
-        <p id="feedback"></p>
-    </div>
-    <script src="script.js"></script>
+  <div class="game-container">
+    <h1>Jeu des Questions pour Tatiana 💖</h1>
+    <p id="question">Question...</p>
+    <input type="text" id="answer" placeholder="Écris ta réponse ici">
+    <br>
+    <button onclick="validateAnswer()">Valider</button>
+    <p id="error-message" style="color: red; margin-top: 10px;"></p>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
